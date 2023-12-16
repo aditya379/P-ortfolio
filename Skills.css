@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(Components/skills.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.fullbody {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Cabin", sans-serif;
+  font-family: "Michroma", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.mainskill {
+  height: 80vh;
+  width: 80px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  border-radius: 20px;
+}
+
+.mainskillhead {
+  text-align: center;
+}
+.mainskillbar {
+  height: 8px;
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.htmlbar {
+  background-color: rgb(243, 102, 27);
+}
+.mainskill:hover .mainskillbar {
+  transform: scale(80);
+}
+.mainskill:hover .htmlhead {
+  color: orangered;
+}
+
+.mainskill:hover .htmlhead::after {
+  content: " 90%";
+}
+
+/* CSS Bar */
+.cssskill {
+  transition: all 0.5s ease-in-out;
+}
+.cssbar {
+  background-color: rgb(27, 207, 243);
+}
+.cssskill:hover .cssbar {
+  transform: scale(70);
+}
+
+.cssskill:hover .csshead {
+  color: rgb(0, 204, 255);
+}
+
+.cssskill:hover .csshead::after {
+  content: " 80%";
+}
+
+/* JS Bar */
+.jsskill {
+  transition: all 0.5s ease-in-out;
+}
+.jsbar {
+  background-color: rgb(237, 241, 0);
+}
+.jsskill:hover .jsbar {
+  transform: scale(60);
+}
+.jsskill:hover .jshead {
+  color: yellow;
+}
+.jsskill:hover .jshead::after{
+  content: " 60%";
+}
+/* React Bar */
+.reactskill {
+  transition: all 0.5s ease-in-out;
+}
+.reactbar {
+  background-color: rgb(91, 85, 252);
+}
+.reactskill:hover .reactbar {
+  transform: scale(40);
+}
+
+.reactskill:hover .reacthead {
+  color: rgb(91, 85, 252);
+}
+.reactskill:hover .reacthead::after {
+  content: " 40%";
+
+}
+
+/* node Bar */
+.nodeskill {
+  transition: all 0.5s ease-in-out;
+}
+.nodebar {
+  background-color: rgb(102, 243, 27);
+}
+.nodeskill:hover .nodebar {
+  transform: scale(40);
+}
+.nodeskill:hover .nodehead {
+  color: greenyellow;
+}
+
+.nodeskill:hover .nodehead::after {
+  content: " 50% ";
+}
